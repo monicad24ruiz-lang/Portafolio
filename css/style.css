@@ -1,0 +1,12 @@
+body{
+    background-color: #c0ecbb;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 10px;
+    background-color: #a4bbbd;
+}

@@ -1,0 +1,52 @@
+body{
+    font-family: arial;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+nav{
+    background-color: #ffe241ce;
+    padding: 5px;
+    margin-top: 40px;
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul{
+    display:flex;
+    gap: 55px;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+.tarjeta{
+    background-color: rgb(172, 221, 235);
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+button{
+    background-color: #50d66d;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #37af45;
+}

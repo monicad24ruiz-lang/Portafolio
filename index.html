@@ -25,8 +25,9 @@ h1, h2, h3 {
             <li> <a href="#inicio">Inicio</a></li>
             <li> <a href="#sobre-mi">Sobre mí</a></li>
             <li> <a href="#habilidades">Habilidades y Proyectos</a></li>
+            <li> <a href="#experiencia">Experiencia</a></li>
             <li class="contact-btn" aria-label="Ir a contacto"> 
-                <a href="#contacto" class="boton-contacto">Contacto</a>
+                <a href="/contacto.html" class="boton-contacto">Contacto</a>
             </li>
         </ul>
     </nav>
@@ -95,7 +96,9 @@ h1, h2, h3 {
             <br>
             <span class="info-value">Quezaltepeque, La Libertad</span>
         </div>
-        <a href="https://1drv.ms/b/c/0f229c950e15b2e7/IQC3FjyFv9DVTZMgF9Hdg4AjARGOj6P-QHrhnpRC2r1ENZw?e=E01jdD" download="Curriculum.pdf" class="boton-descargar">Descargar CV</a>
+
+
+        <a class="boton-descargar" href="https://1drv.ms/b/c/0f229c950e15b2e7/IQC3FjyFv9DVTZMgF9Hdg4AjARGOj6P-QHrhnpRC2r1ENZw?e=E01jdD" download="Curriculum.pdf">Descargar CV</a>
     
         <div class="container-background">
         
@@ -202,37 +205,56 @@ h1, h2, h3 {
     <section id="experiencia" class="experience-section">
         <h2>Experiencia y Educación</h2>
 
-    <div class="container-expe">
-        <!-- Carta 1-->
     <div class="card-desplegable">
-            <div class="timeline">
-                <div class="timeline-marker"></div>
-        <div class="card-content">
-            <span class="fechas">2026 - el presente</span>
+
+    <details>
+
+        <summary>
+
+            <span class="fechas">2026 - Presente</span>
+
             <h3>Curso de Desarrollo Web Frontend</h3>
+
             <span class="contexto">Formación continua</span>
-            <p id="parrafo">
-                Construcción y diseño de interfaces con estándares modernos. Aprendizaje de HTML5 Semántico, CSS Grid, Flexbox, adaptabilidad móvil (Responsive Design), Git, GitHub y control de versiones.
+
+        </summary>
+
+        <div class="contenido-desplegable">
+            <p>
+                Construcción y diseño de interfaces con estándares modernos.
+                Aprendizaje de HTML5 Semántico, CSS Grid, Flexbox,
+                Responsive Design, Git y GitHub.
             </p>
         </div>
-        </div>
+
+     </details>
     </div>
 
 <!-- Carta 2-->
         <div class="card-desplegable">
-            <div class="timeline">
-                <div class="timeline-marker"></div>
-                <div class="card-content">
-                    <span class="fechas">2022 - 2024 - el pasado</span>
-                    <h3>Técnico en Multimedia</h3>
-                     <span class="contexto">Título universitario</span>
-                <p id="parrafo">
-                    Profesional que produce mensajes multimedia en formatos oral, escrito, sonoro, visual y audiovisual, gráfico o animado, dirigidos a diversos medios, mediante herramientas tecnológicas existentes.
-                </p>
-                </div>
+
+    <details>
+
+        <summary>
+
+            <span class="fechas">2022 - 2024</span>
+
+            <h3>Técnico en Multimedia</h3>
+
+            <span class="contexto">Título universitario</span>
+
+        </summary>
+
+        <div class="contenido-desplegable">
+            <p>
+                Profesional que produce mensajes multimedia en formatos oral,
+                escrito, sonoro, visual y audiovisual mediante herramientas
+                tecnológicas.
+            </p>
         </div>
-        </div>
-        </div>
+    </details>
+    </div>
+
     </section>
     </main>
 

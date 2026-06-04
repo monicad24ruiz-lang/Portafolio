@@ -594,7 +594,7 @@ section, article, .container, .card-desplegable, nav, h1, h2, h3, p {
         flex-direction: column;
         position: absolute;
         top: 30px;
-        right: 20;
+        right: 0;
         background: #e4c53b;
         width: 200px;
         padding: 20px;

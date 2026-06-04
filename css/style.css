@@ -21,7 +21,8 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    padding: 5px;
+    align-items: center;
+    gap: 25px;
 }
 
 nav a{
@@ -34,24 +35,19 @@ nav a{
 }
 
 .contact-btn {
-    display: inline-block;
-    padding: 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: #ff544c;
-    color: #ffffff;
-    text-decoration: none;
     border-radius: 30px;
-    font-weight: bold;
-    font-size: 17px;
-    width: auto;
-    
+    height: 40px;
 }
 
 .contact-btn a {
-    padding: 0px 15px;
+    padding: 0 20px;
+    line-height: 40px;
     color: white;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
 }
 
 .contact-btn:hover {
@@ -60,10 +56,33 @@ nav a{
 
 /* Estilos para la sección de inicio y bienvenida */
 #inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
     background-color: #98d0e2;
     padding: 70px;
     border-radius: 10px;
-    margin-top: 90px;
+    margin-top: 60px;
+}
+
+.inicio-texto {
+    flex: 5;
+}
+
+.inicio-foto {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio-foto img {
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 2 30px 20px rgba(0,0,0,0.2);
 }
 
 .bienvenida {
@@ -176,14 +195,20 @@ a {
     background-color: #fe9a34;
     border-radius: 50%;
     margin: 50px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+
+    animation: baile 3s ease-in-out infinite;
 }
 
 #semantico, #grid, #flex {
-    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
     font-weight: bold;
     text-align: center;
     font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Estilo de la sección Experiencia y Edución */
@@ -245,5 +270,65 @@ h3 {
 
 }
 
-/* Formulario */
+/* Animaciones */
 
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section,
+article,
+.container,
+.card-desplegable,
+nav,
+h1,
+h2,
+h3,
+p {
+    animation: aparecer 1s ease;
+}
+
+/* Animacion de los circulos */
+
+@keyframes baile {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Adaptable a telefonos moviles */
+
+@media (max-width: 768px) {
+
+    #inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-circle {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 50px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

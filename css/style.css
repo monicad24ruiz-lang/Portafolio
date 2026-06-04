@@ -11,6 +11,21 @@ body{
 }
 
 /* Estilos para la barra de navegación */
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #98d0e2;
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -39,6 +54,15 @@ nav a {
 
 nav a:hover {
     color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    gap: 30px;
+    flex: 1; 
 }
 
 
@@ -95,7 +119,7 @@ nav a:hover {
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid white;
-    box-shadow: 2 30px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0px 20px rgba(0,0,0,0.30);
 }
 
 .bienvenida {
@@ -123,7 +147,32 @@ p {
     padding: 60px;
     border-radius: 10px;
     margin-top: 60px;
-    
+    animation: aparecer 1s ease;  
+}
+
+
+.about-text, .about-info, .info-item {
+    animation: aparecer 1s ease;
+    animation-fill-mode: both;
+    transition: all 0.3s ease;
+}
+
+.about-text {
+    animation-delay: 0.1s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.30);
+}
+
+.about-info {
+    animation-delay: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.30);
+}
+
+.info-item:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.info-item:nth-child(2) {
+    animation-delay: 0.7s;
 }
 
 h2 {
@@ -146,8 +195,8 @@ h2 {
 .container div {
     background-color: #ffffff;
     border-radius: 30px;
-    padding: 25px;
-    margin: 12px;
+    padding: 45px;
+    margin: 8px;
     text-align: justify;
     margin-top: 5px;
 }
@@ -165,7 +214,7 @@ a {
     display: flex;
     justify-content: right;
     align-items: center;
-    height: 120px;
+    height: 130px;
 }
 
 .container-background img {
@@ -345,6 +394,7 @@ a {
 
 .btn-proyecto:hover {
     background-color: black;
+    color: #ff544c
 }
 
 .btn-proyecto {
@@ -421,7 +471,7 @@ footer p {
 }
 
 
-/* Animaciones */
+/* Animacion al cargar pagina */
 
 @keyframes aparecer {
     from {
@@ -435,16 +485,22 @@ footer p {
     }
 }
 
-section,
-article,
-.container,
-.card-desplegable,
-nav,
-h1,
-h2,
-h3,
-p {
+section, article, .container, .card-desplegable, nav, h1, h2, h3, p {
     animation: aparecer 1s ease;
+}
+
+/* Animacion en sección "sobre mí" */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Animacion de los circulos */
@@ -526,5 +582,33 @@ p {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Responsive (menu hamburguesa) */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 20;
+        background: #e4c53b;
+        width: 200px;
+        padding: 20px;
+        border-radius: 50px; 
+    }
+
+    .nav-links.active {
+        display: flex;
+        font-size: 15px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
     }
 }

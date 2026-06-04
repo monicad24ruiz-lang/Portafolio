@@ -11,7 +11,7 @@
 
 <style>
 h1, h2, h3 {
-  font-family: 'Sansita Swashed';
+  font-family: 'Sansita Swashed', cursiva;
 }
 </style>
 
@@ -19,6 +19,10 @@ h1, h2, h3 {
 <body>
     <!-- Encabezado principal del portafolio -->
 <header>
+
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
 
     <nav id="menu"> 
         <ul class="nav-links"> 
@@ -32,7 +36,18 @@ h1, h2, h3 {
         </ul>
     </nav>
 
-</header>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+    });
+
+});
+</script>
 
 <!-- Contenido principal del portafolio -->
  <main> 
@@ -98,7 +113,7 @@ h1, h2, h3 {
         </div>
 
 
-        <a class="boton-descargar" href="https://1drv.ms/b/c/0f229c950e15b2e7/IQC3FjyFv9DVTZMgF9Hdg4AjARGOj6P-QHrhnpRC2r1ENZw?e=E01jdD" download="Curriculum.pdf">Descargar CV</a>
+        <a class="boton-descargar" href="https://1drv.ms/b/c/0f229c950e15b2e7/IQC9omUYPRCuSqsH8YN7M2RiAcmwR1054bDXb6Gn_rnaRXU?e=2FGqY2" download="Curriculum.pdf">Descargar CV</a>
     
         <div class="container-background">
         
@@ -146,7 +161,7 @@ h1, h2, h3 {
                     menú interactivo y estructura responsive.
                 </p>
 
-                <a href="#" class="btn-proyecto">
+                <a href="https://github.com/jisus-saurio/CaferiaWeb" class="btn-proyecto">
                     Ver Proyecto
                 </a>
             </div>
@@ -164,10 +179,10 @@ h1, h2, h3 {
                 <h3>Tarjeta de presentación</h3>
 
                 <p>
-                    Una tarjeta simple con diseños modernos.
+                    Una tarjeta simple con mi informacion cable y diseños modernos.
                 </p>
 
-                <a href="#" class="btn-proyecto">
+                <a href="https://github.com/monicad24ruiz-lang/Tarjeta-de-presentaci-n" class="btn-proyecto">
                     Ver Proyecto
                 </a>
             </div>
@@ -189,7 +204,7 @@ h1, h2, h3 {
                     utilizando Flexbox y Grid.
                 </p>
 
-                <a href="#" class="btn-proyecto">
+                <a href="https://github.com/monicad24ruiz-lang/Portafolio/blob/master/practicacss.html" class="btn-proyecto">
                     Ver Proyecto
                 </a>
             </div>

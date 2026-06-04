@@ -5,87 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Personal</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+
+<style>
+h1, h2, h3 {
+  font-family: 'Sansita Swashed';
+}
+</style>
+
 </head>
 <body>
     <!-- Encabezado principal del portafolio -->
-<header> 
-    <nav> 
-        <ul id="menu"> 
+<header>
+
+    <nav id="menu"> 
+        <ul class="nav-links"> 
             <li> <a href="#inicio">Inicio</a></li>
             <li> <a href="#sobre-mi">Sobre mí</a></li>
-            <li> <a href="#proyectos">Proyectos</a></li>
-            <li> <a href="#habilidades">Habilidades</a></li>
-            <li> <a href="#contacto">Contacto</a></li>
+            <li> <a href="#habilidades">Habilidades y Proyectos</a></li>
+            <li class="contact-btn" aria-label="Ir a contacto"> 
+                <a href="#contacto" class="boton-contacto">Contacto</a>
+            </li>
         </ul>
     </nav>
+
 </header>
 
 <!-- Contenido principal del portafolio -->
  <main> 
 <!-- Sección de bienvenida e inicio -->
  <section id="inicio">
-    <h1>Bienvenido a Mi Portafolio Personal</h1>
-    <p>Explora mis proyectos, habilidades y experiencia profesional.</p>
+    <span class="bienvenida">Soy Mónica Ruiz, Programadora HTML</span>
+    <h1>Bienvenido a 
+        <br>Mi Portafolio Personal</h1>
+    <p>Explora mis proyectos, habilidades y experiencia profesional que he desarrollado 
+        <br> a través del tiempo.</p>
 </section>
+
     
-    <!--Sección de sobre mí-->
+    <!--Sección sobre mí-->
     <section id="sobre-mi">
         <h2>Sobre mí</h2>
-        <p>Me llamo Mónica Ruiz y soy Programadora HTML. Tengo 21 años y me especializo en Maquetación Web.</p>
+<br>
+<br>
+<br>
+<br>
+        <div class="container">
+    
+    <div class="about-text">
+                        <h2>Mi camino por el desarrollo web</h2>
+                        <br>
+
+    <p>Soy estudiante apasionada por el <strong>desarrollo web</strong>, con interés en crear sitios 
+    bien estructurados y visualmente atractivos utilizando <em>HTML Semántico</em> y <em>CSS</em>. 
+    Me gusta aprender nuevas tecnologías, experimentar con diseños modernos y aplicar buenas 
+    prácticas para lograr proyectos accesibles y funcionales.</p>
+    <br>
+    <p>Además de la programación, disfruto la <strong>creatividad</strong> y el trabajo colaborativo, 
+    buscando siempre mejorar mis habilidades y aportar nuevas soluciones.</p>
+    </div>
+
+    <div class="about-info">
+        
+        <div class="info-item">
+            
+            <span class="info-label"><strong>Email:</strong></span>
+            <br>
+            <span class="info-value">monicad24ruiz@gmail.com</span>
+        </div>
+
+        <div class="info-item">
+            <span class="info-label"><strong>Ubicación:</strong></span>
+            <br>
+            <span class="info-value">Quezaltepeque, La Libertad</span>
+        </div>
+        <a href="https://1drv.ms/b/c/0f229c950e15b2e7/IQC3FjyFv9DVTZMgF9Hdg4AjARGOj6P-QHrhnpRC2r1ENZw?e=E01jdD" download="Curriculum.pdf" class="boton-descargar">Descargar CV</a>
+    
+        <div class="container-background">
+        
+            <img src="img/WhatsApp Image 2024-09-02 at 04.02.59 (1) 1.png" alt="mapa" class="profile-image">
+            
+            </div>
+    </div>
+
+    </div>
     </section>
 
-    <!-- Sección de proyectos -->
-     <section id="proyectos">
-        <h2>Mis Proyectos</h2>
+    <!-- Sección de habilidades -->
+
+     <section id="habilidades">
+        <h2>Habilidades y Proyectos</h2>
+    
+    <div class="container-circle">
+
+        <div id="semantico" class="habilidades-circle1">Semántico</div>
+        <div id="grid" class="habilidades-circle2">Grid</div>
+        <div id="flex" class="habilidades-circle3">Flex</div>
+        
+    </div>
+    </section>
+
+
+    <!-- Articulos de proyectos -->
 
         <article class="proyecto">
-            <h3>Proyecto Destacado 1: Sitio Web Personal</h3>
+            <h3>Portafolio Personal</h3>
             <p>Descripción del proyecto 1. Tecnologías utilizadas: HTML, CSS, JavaScript.</p>
             <a href="#">Ver proyecto completo</a>
         </article>
 
         <article class="proyecto">
-            <h3>Proyecto Destacado 2</h3>
+            <h3>Café Lawhore</h3>
             <p>Descripción del proyecto 2. Tecnologías utilizadas: Python, Django.</p>
             <a href="#">Ver proyecto completo</a>
         </article>
+    
 
-        <article class="proyecto">
-                <h3>Proyecto Destacado 3</h3>
-                <p>Descripción del proyecto 3. Tecnologías utilizadas: React, Node.js.</p>
-                <a href="#">Ver proyecto completo</a>
-        </article>
+    <!-- Sección de experiencia y educación-->
+
+    <section id="experiencia" class="experience-section">
+        <h2>Experiencia y Educación</h2>
+
+    <div class="container-expe">
+        <!-- Carta 1-->
+    <div class="card-desplegable">
+            <div class="timeline">
+                <div class="timeline-marker"></div>
+        <div class="card-content">
+            <span class="fechas">2026 - el presente</span>
+            <h3>Curso de Desarrollo Web Frontend</h3>
+            <span class="contexto">Formación continua</span>
+            <p id="parrafo">
+                Construcción y diseño de interfaces con estándares modernos. Aprendizaje de HTML5 Semántico, CSS Grid, Flexbox, adaptabilidad móvil (Responsive Design), Git, GitHub y control de versiones.
+            </p>
+        </div>
+        </div>
+    </div>
+
+<!-- Carta 2-->
+        <div class="card-desplegable">
+            <div class="timeline">
+                <div class="timeline-marker"></div>
+                <div class="card-content">
+                    <span class="fechas">2022 - 2024 - el pasado</span>
+                    <h3>Técnico en Multimedia</h3>
+                     <span class="contexto">Título universitario</span>
+                <p id="parrafo">
+                    Profesional que produce mensajes multimedia en formatos oral, escrito, sonoro, visual y audiovisual, gráfico o animado, dirigidos a diversos medios, mediante herramientas tecnológicas existentes.
+                </p>
+                </div>
+        </div>
+        </div>
+        </div>
     </section>
+    </main>
 
-    <!-- Sección de habilidades -->
-     <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Python, Django</li>
-            <li>React, Node.js</li>
-        </ul>
-    </section>
-
-    <!-- Sección de contacto -->
-     <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a través de monicad24ruiz@gmail.com o enviarme un mensaje:</p>
-
-        <form action="#" method="POST">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-</main>
 
  <!-- Pie de página del portafolio -->
   <footer>

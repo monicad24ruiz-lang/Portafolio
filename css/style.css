@@ -1,12 +1,249 @@
-body{
-    background-color: #c0ecbb;
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    margin: 0;
 }
 
-#menu{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 10px;
-    background-color: #a4bbbd;
+/* Estilos para el cuerpo de la página */
+body{
+    background: #98d0e2;
+    margin: 10px;
 }
+
+/* Estilos para la barra de navegación */
+nav {
+    display: flex;
+    justify-content: right;
+    padding: 15px;
+    background-color: #98d0e2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 5px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(29, 28, 28);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 8px 0px;
+    background-color: #ff544c;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 17px;
+    width: auto;
+    
+}
+
+.contact-btn a {
+    padding: 0px 15px;
+    color: white;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contact-btn:hover {
+    background-color: #000000;  
+}
+
+/* Estilos para la sección de inicio y bienvenida */
+#inicio {
+    background-color: #98d0e2;
+    padding: 70px;
+    border-radius: 10px;
+    margin-top: 90px;
+}
+
+.bienvenida {
+    display: flex;
+    font-size: 18px;
+    color: #000000;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 55px;
+    color: #000000;
+    line-height: 60px;
+}
+
+p {
+    font-size: 18px;
+    color: #000000;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 35px;
+}
+
+/* Estilos para la sección de sobre mí */
+#sobre-mi {
+    padding: 70px;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+
+h2 {
+    font-size: 35px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.container {
+    display: grid;
+    background-color: #98d0e2;
+    padding: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+}
+
+.container div {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 25px;
+    margin: 12px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+a {
+    margin: 40px;
+}
+
+.about-info {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.container-background {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 120px;
+}
+
+.container-background img {
+    max-width: 200px;
+    height: auto;
+}
+
+
+
+.boton-descargar {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 25px;
+    background-color: #ff544c;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 17px;
+    width: auto;
+}
+
+.boton-descargar:hover {
+        background-color: #000000;
+    }
+
+
+/* Estilos para la sección de habilidades */
+
+.container-circle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    padding: 50px;
+    gap: 200px;
+}
+
+.habilidades-circle1, .habilidades-circle2, .habilidades-circle3 {
+    width: 120px;
+    height: 120px;
+    background-color: #fe9a34;
+    border-radius: 50%;
+    margin: 50px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#semantico, #grid, #flex {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* Estilo de la sección Experiencia y Edución */
+
+.container-expe {
+    display: grid;
+    background-color: #98d0e2;
+    padding: 70px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    color: white;
+}
+
+#parrafo {
+    color: white;
+
+}
+
+.container-expe div {
+    background-color: #2ab0a3;
+    border-radius: 30px;
+    padding: 3px;
+    margin: 12px;
+    text-align: justify;
+}
+
+.fechas, .contexto {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Estilos de contacto */
+
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #98d0e2;
+    gap: 24px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.container-contact p {
+    text-align: justify left;
+
+}
+
+.contact-methods {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    padding: 200px;
+    gap: 0px;
+}
+
+#contacto {
+    padding: 100px;
+
+}
+
+/* Formulario */
+
